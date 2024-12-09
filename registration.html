@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="register.php" method="post">
+        <table>
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Roll No:</td>
+                <td><input type="text" name="rollno" required></td>
+            </tr>
+            <tr>
+                <td>Class:</td>
+                <td><input type="text" name="class" required></td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td><input type="text" name="dept" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="tel" name="phone" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="3" cols="22" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Taluka:</td>
+                <td>
+                    <select name="taluka" required>
+                        <option value="taluka1">Taluka 1</option>
+                        <option value="taluka2">Taluka 2</option>
+                        <option value="taluka3">Taluka 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>District:</td>
+                <td>
+                    <select name="district" required>
+                        <option value="district1">District 1</option>
+                        <option value="district2">District 2</option>
+                        <option value="district3">District 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Skills:</td>
+                <td>
+                    <input type="checkbox" name="skills" value="coding"> Coding
+                    <input type="checkbox" name="skills" value="sports"> Sports
+                    <input type="checkbox" name="skills" value="art"> Art
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
